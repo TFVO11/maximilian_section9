@@ -16,13 +16,17 @@ function App() {
   };
 
   return (
-    <React.Fragment>
+    <div>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </React.Fragment>
+    </div>
   );
 }
 
 export default App;
 
 //using Fragment is reasonable cuz using just<div> make a complex html tree
+//why we use portal? lower level where can't compose the coverring layer then we can't control ensure display
+//deeply nested app.js is caused to deeply nested errormodal 
+//react DOM(is composed to node such a <header>...) is kind of the adapter for React to the browser
+//
