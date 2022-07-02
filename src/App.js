@@ -16,11 +16,13 @@ function App() {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </React.Fragment>
   );
 }
 
 export default App;
+
+//using Fragment is reasonable cuz using just<div> make a complex html tree
