@@ -74,4 +74,5 @@ export default AddUser;
 //nameInputRef is planed on connecting input in username
 //ref allow to access the DOM component like a value, current...etc
 //so we can delete useState cuz we use current.value
-//but we typycally we use usestate cuz ref posibly do something that is changing DOM...
+//but we typically we use usestate cuz ref posibly do something that is changing DOM...
+//uncontroled component
